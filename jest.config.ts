@@ -8,8 +8,8 @@ const createJestConfig = nextJest({
 });
 
 const config: Config = {
-   // Specifies how modules are resolved during tests
-   moduleNameMapper: {
+  // Specifies how modules are resolved during tests
+  moduleNameMapper: {
     '\\.(css)$': 'identity-obj-proxy', // Maps CSS files for simulating modules in tests
     '^~/(.*)$': path.join(__dirname, 'src', '$1'), // Maps custom paths to actual directories
   },
