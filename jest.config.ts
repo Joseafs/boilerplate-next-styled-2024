@@ -1,6 +1,7 @@
+import path from 'path';
+
 import type { Config } from 'jest';
 import nextJest from 'next/jest';
-import path from 'path';
 
 const createJestConfig = nextJest({
   // Provide the path to your Next.js app to load next.config.js and .env files in your test environment
@@ -13,12 +14,13 @@ const config: Config = {
     '\\.(css)$': 'identity-obj-proxy', // Maps CSS files for simulating modules in tests
     '^~/(.*)$': path.join(__dirname, 'src', '$1'), // Maps custom paths to actual directories
   },
+  // Specifies a predefined set of configurations for Jest.
+  preset: 'ts-jest',
+
   // Defines how TypeScript files should be transformed to JavaScript
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
   },
-  // Specifies a predefined set of configurations for Jest.
-  preset: 'ts-jest',
 
   // Add setup file
   setupFilesAfterEnv: ['@testing-library/jest-dom'],
