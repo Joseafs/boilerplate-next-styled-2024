@@ -1,11 +1,12 @@
 import { FC } from 'react';
 
+import { Root } from './styles';
 import { Props } from './types';
 
 export const Button: FC<Props> = ({ children, type, disabled }) => {
   return (
-    <button type={type} disabled={disabled}>
+    <Root type={type} disabled={disabled}>
       {children}
-    </button>
+    </Root>
   );
 };
