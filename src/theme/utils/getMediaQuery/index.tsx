@@ -3,7 +3,7 @@ import theme from '~/theme/config';
 
 import { PropsMediaType } from './types';
 
-export const useMediaQuery = (): PropsMediaType => {
+export const getMediaQuery = (): PropsMediaType => {
   const { breakpoints } = theme;
 
   const maxWidth = {

@@ -2,6 +2,8 @@
 
 exports[`ButtonText Should match snapshot 1`] = `
 <div>
-  <button />
+  <button
+    class="sc-ca2c7edf-0 jmxxiU"
+  />
 </div>
 `;

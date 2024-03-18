@@ -1,7 +1,6 @@
-
 import styled, { css } from 'styled-components';
 
-import { getThemeColor } from '~/utils/useThemeColor';
+import { getThemeColor } from '~/theme/utils/getThemeColor';
 
 import { PropsButtonColor } from './types';
 

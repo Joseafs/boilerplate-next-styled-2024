@@ -59,7 +59,6 @@ export type PropsTheme = {
     background: {
       default: string;
       divider: string;
-      rgba: string;
     };
   };
   shape: {

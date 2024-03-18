@@ -33,50 +33,49 @@ export const theme: PropsTheme = {
     mode: 'light',
 
     common: {
-      black: '#000',
+      black: 'rgb(0, 0, 0)',
       inherit: 'inherit',
-      white: '#fff',
+      white: 'rgb(255, 255, 255)',
     },
     primary: {
-      main: '#CD2323',
+      main: 'rgb(205, 35, 35)',
     },
     secondary: {
-      main: '#0F1115',
+      main: 'rgb(15, 17, 21)',
     },
 
     error: {
-      dark: '#AA0909',
-      light: '#F76D6D',
-      main: '#C20A0A',
-      text: '#FEE7E7',
+      dark: 'rgb(170, 9, 9)',
+      light: 'rgb(247, 109, 109)',
+      main: 'rgb(194, 10, 10)',
+      text: 'rgb(254, 231, 231)',
     },
     grey: {
-      50: '#fafafa',
-      100: '#f5f5f5',
-      200: '#eeeeee',
-      300: '#e0e0e0',
-      400: '#bdbdbd',
-      500: '#9e9e9e',
-      600: '#757575',
-      700: '#666666',
-      800: '#495057',
-      900: '#333333',
-      1000: '#111',
+      50: 'rgb(250, 250, 250)',
+      100: 'rgb(245, 245, 245)',
+      200: 'rgb(238, 238, 238)',
+      300: 'rgb(224, 224, 224)',
+      400: 'rgb(189, 189, 189)',
+      500: 'rgb(158, 158, 158)',
+      600: 'rgb(117, 117, 117)',
+      700: 'rgb(102, 102, 102)',
+      800: 'rgb(73, 80, 87)',
+      900: 'rgb(51, 51, 51)',
+      1000: 'rgb(17, 17, 17)',
     },
     info: {
-      main: '#E5ECFF',
+      main: 'rgb(229, 236, 255)',
     },
     success: {
-      main: '#08916F',
+      main: 'rgb(8, 145, 111)',
     },
     warning: {
-      main: '#FEF6E7',
+      main: 'rgb(254, 246, 231)',
     },
 
     background: {
-      default: '#fff',
+      default: 'rgb(255, 255, 255)',
       divider: 'rgba(0,0,0,.1)',
-      rgba: 'rgba(255,255,255,.7)',
     },
   },
   shadows: [
@@ -89,7 +88,6 @@ export const theme: PropsTheme = {
   shape: {
     radius: 4,
   },
-
   space: 8,
   zindex: {
     appBar: 1100,
