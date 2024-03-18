@@ -1,12 +1,32 @@
 'use client';
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const Root = styled.button`
-  background-color: ${({ theme }) => theme.palette.secondary.main};
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+import { getThemeColor } from '~/utils/useThemeColor';
+
+import { PropsButtonColor } from './types';
+
+export const Root = styled.button<PropsButtonColor>`
+  ${({ theme, color, disabled }) => css`
+    ${theme.animation.transition[0]};
+    background-color: ${getThemeColor(theme, color, 'main')};
+    color: ${theme.palette.common.white};
+    padding: ${theme.space * 2}px;
+    border-radius: ${theme.shape.radius * 2}px;
+    border: solid 1px ${theme.palette.grey[400]};
+
+    &:hover {
+      ${theme.animation.hover[0]};
+    }
+    &:active {
+      ${theme.animation.active[0]};
+    }
+
+    ${disabled &&
+    css`
+      pointer-events: none;
+      background-color: ${theme.palette.grey[300]};
+      border: solid 1px ${theme.palette.grey[100]};
+    `}
+  `}
 `;

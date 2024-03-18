@@ -77,6 +77,7 @@ export type PropsTheme = {
   };
   animation: {
     transition: string[];
+    hover: any[];
     active: string[];
   };
 };

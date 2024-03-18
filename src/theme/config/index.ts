@@ -1,3 +1,5 @@
+import { css } from 'styled-components';
+
 import { PropsTheme } from './types';
 
 export const theme: PropsTheme = {
@@ -5,6 +7,12 @@ export const theme: PropsTheme = {
 
   animation: {
     active: ['transform: scale(0.94); transition: unset;', 'transform: scale(0.99); transition: unset;'],
+    hover: [
+      css`
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transform: translateY(-4px);
+      `,
+    ],
     transition: ['transition: all 0.2s ease-in-out', 'transition: all 0.4s ease-in-out'],
   },
   breakpoints: {
@@ -32,13 +40,10 @@ export const theme: PropsTheme = {
       white: '#fff',
     },
     primary: {
-      dark: '#002699',
-      light: '#3DA8F5',
-      main: '#0033CC',
-      text: '#fff',
+      main: '#CD2323',
     },
     secondary: {
-      main: '#0FAC0F',
+      main: '#0F1115',
     },
 
     error: {
@@ -86,6 +91,7 @@ export const theme: PropsTheme = {
   shape: {
     radius: 4,
   },
+
   space: 8,
   zindex: {
     appBar: 1100,

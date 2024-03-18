@@ -5,7 +5,7 @@ import { FC, PropsWithChildren } from 'react';
 import { StyledComponentsRegistry } from '~/theme/StyledComponentsRegistry';
 import theme from '~/theme/config';
 import { GlobalStyles } from '~/theme/config/globals';
-import { ThemeUI } from '~/theme/provider';
+import { ThemeProvider } from '~/theme/provider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,7 +20,7 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => (
     <body className={inter.className}>
       <StyledComponentsRegistry>
         <GlobalStyles theme={theme} />
-        <ThemeUI>{children}</ThemeUI>
+        <ThemeProvider>{children}</ThemeProvider>
       </StyledComponentsRegistry>
     </body>
   </html>
