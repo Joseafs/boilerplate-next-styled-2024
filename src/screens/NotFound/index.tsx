@@ -8,7 +8,9 @@ const imageName = 'landscape-with-clouds-mountains-trees-with-not-found-backgrou
 const imageDescription = 'Paisagem com nuvens montanhas e arvores com not found ao fundo';
 
 export const NotFoundScreen: FC = () => (
-  <ScreenCentralized>
-    <ImageFit src={`images/${imageName}`} description={imageDescription} width={900} height={900} objectFit="cover" />
-  </ScreenCentralized>
+  <main>
+    <ScreenCentralized>
+      <ImageFit src={`images/${imageName}`} description={imageDescription} width={900} height={900} objectFit="cover" />
+    </ScreenCentralized>
+  </main>
 );
