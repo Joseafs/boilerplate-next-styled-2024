@@ -1,13 +1,7 @@
 {
-  "extends": [
-    "eslint:recommended",
-    "prettier",
-    "next/core-web-vitals",
-    "plugin:storybook/recommended"
-  ],
-  "plugins": [
-    "import"
-  ],
+  "extends": ["eslint:recommended", "prettier", "next/core-web-vitals"],
+
+  "plugins": ["import"],
   "env": {
     "browser": true,
     "es6": true,
@@ -19,9 +13,7 @@
     "no-restricted-imports": [
       "error",
       {
-        "patterns": [
-          "..*"
-        ]
+        "patterns": ["..*"]
       }
     ],
     "import/order": [
@@ -31,14 +23,7 @@
           "order": "asc"
         },
         "newlines-between": "always",
-        "groups": [
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index"
-        ]
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index"]
       }
     ],
     "sort-keys": [

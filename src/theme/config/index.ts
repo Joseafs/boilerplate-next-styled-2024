@@ -1,5 +1,3 @@
-import { css } from 'styled-components';
-
 import { PropsTheme } from './types';
 
 export const theme: PropsTheme = {
@@ -8,7 +6,7 @@ export const theme: PropsTheme = {
   animation: {
     active: ['transform: scale(0.94); transition: unset;', 'transform: scale(0.99); transition: unset;'],
     hover: [
-      css`
+      `
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         transform: translateY(-4px);
       `,
