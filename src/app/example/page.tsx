@@ -1,5 +1,5 @@
-import { ExampleScreen } from '~/screens/Example';
+import { NotFoundScreen } from '~/screens/NotFound';
 
 export default function Example() {
-  return <ExampleScreen />;
+  return <NotFoundScreen />;
 }
