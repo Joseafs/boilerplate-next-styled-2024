@@ -2,11 +2,9 @@
 
 import { createGlobalStyle } from 'styled-components';
 
-import { fixRootPath } from '~/utils/fixRootPath';
-
 import { PropsRootTheme } from './types';
 
-const rootPathFonts = fixRootPath('fonts/');
+const rootPathFonts = '/fonts/';
 
 export const GlobalStyles = createGlobalStyle`
 
