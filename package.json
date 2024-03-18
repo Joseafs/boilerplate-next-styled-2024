@@ -1,5 +1,6 @@
 {
   "name": "boilerplate-next-styled-2024",
+  "description": "Project made with next 14 and styled-components",
   "version": "0.1.0",
   "private": true,
   "scripts": {
