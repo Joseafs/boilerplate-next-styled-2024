@@ -1,8 +1,8 @@
 import { render } from '@testing-library/react';
 
-import { Button } from '.';
+import { snapshotYamamotoName } from '~/utils/mocks/snapshotMockValues';
 
-const buttonText = 'Click me';
+import { Button } from '.';
 
 describe('ButtonText', () => {
   test('Should match snapshot', () => {
@@ -11,15 +11,15 @@ describe('ButtonText', () => {
   });
 
   test('Should button render disabled', () => {
-    const { getByText } = render(<Button disabled>{buttonText}</Button>);
-    const button = getByText(buttonText);
+    const { getByText } = render(<Button disabled>{snapshotYamamotoName}</Button>);
+    const button = getByText(snapshotYamamotoName);
 
     expect(button).toBeDisabled();
   });
 
   test.only('Should background-color of button be red', () => {
-    const { getByText } = render(<Button>{buttonText}</Button>);
-    const button = getByText(buttonText);
+    const { getByText } = render(<Button>{snapshotYamamotoName}</Button>);
+    const button = getByText(snapshotYamamotoName);
 
     expect(button).toHaveStyle('background-color: red');
   });
