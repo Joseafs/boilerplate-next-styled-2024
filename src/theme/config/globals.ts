@@ -4,21 +4,22 @@ import { createGlobalStyle } from 'styled-components';
 
 import { PropsRootTheme } from './types';
 
-const rootPathFonts = '/fonts/';
+const rootPathFontQuicksand = '/fonts/quicksand/Quicksand-Regular.ttf';
 
 export const GlobalStyles = createGlobalStyle`
+
 
   @font-face {
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 400;
-    src: url('${rootPathFonts}quicksand/Quicksand-Regular.ttf') format('truetype');
+    src: url(${rootPathFontQuicksand}) format('truetype');
   }
   @font-face {
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 600;
-    src: url('${rootPathFonts}quicksand/Quicksand-SemiBold.ttf') format('truetype');
+    src: url(${rootPathFontQuicksand}) format('truetype');
   }
 
   :root {

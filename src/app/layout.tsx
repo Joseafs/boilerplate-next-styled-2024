@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 };
 
 const RootLayout: FC<PropsWithChildren> = ({ children }) => (
-  <html lang="en">
+  <html lang="pt-BR">
     <body className={inter.className}>
       <StyledComponentsRegistry>
         <GlobalStyles theme={theme} />
