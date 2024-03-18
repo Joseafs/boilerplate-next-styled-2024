@@ -1,4 +1,4 @@
-import { ExampleScreen } from '~/screens/example';
+import { ExampleScreen } from '~/screens/Example';
 
 export default function Example() {
   return <ExampleScreen />;
