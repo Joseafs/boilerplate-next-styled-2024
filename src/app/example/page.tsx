@@ -1,5 +1,5 @@
-import { NotFoundScreen } from '~/screens/NotFound';
+import { HomeScreen } from '~/screens/Home';
 
-export default function Example() {
-  return <NotFoundScreen />;
+export default function ExamplePage() {
+  return <HomeScreen />;
 }

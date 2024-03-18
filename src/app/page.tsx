@@ -1,18 +1,11 @@
 import { Metadata } from 'next';
 
-import { Button } from '~/components/Button';
+import { HomeScreen } from '~/screens/Home';
 
 export const metadata: Metadata = {
-  title: 'Start page',
+  title: 'Home page',
 };
 
-export default function Example() {
-  return (
-    <main>
-      <div>
-        <h1>Start Page - Boilerplate Next 14 + styled-components</h1>
-        <Button>Styled button</Button>
-      </div>
-    </main>
-  );
+export default function HomePage() {
+  return <HomeScreen />;
 }
