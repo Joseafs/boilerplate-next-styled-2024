@@ -1,5 +1,5 @@
 {
-  "extends": ["eslint:recommended", "plugin:import/recommended", "prettier", "next/core-web-vitals"],
+  "extends": ["eslint:recommended", "prettier", "next/core-web-vitals"],
   "plugins": ["import"],
   "env": {
     "browser": true,
