@@ -43,6 +43,46 @@ Esse é um projeto boilerplate criado com o objeto de acelerar novos projetos, d
 
 ---
 
+## Estrutura de pastas e recursos base:
+
+```
+└── 📁src
+    └── 📁app
+        └── 📁example
+
+    └── 📁components
+        └── 📁Button
+        └── 📁ImageFit
+
+    └── 📁screens
+        └── 📁Home
+        └── 📁NotFound
+
+    └── 📁services
+        └── 📁api
+            └── 📁error
+            └── 📁methods
+                └── 📁apiDelete
+                └── 📁apiGet
+                └── 📁apiPost
+
+        └── 📁examples
+            └── 📁fetchExamples
+
+    └── 📁theme
+        └── 📁config
+        └── 📁provider
+        └── 📁utils
+            └── 📁getMediaQuery
+            └── 📁getThemeColor
+            └── 📁withThemeProvider
+
+    └── 📁utils
+        └── 📁mocks
+```
+
+---
+
 ## Pronto para Vercel
 
 - [Master](https://boilerplate-next-styled-2024.vercel.app/)
