@@ -7,12 +7,12 @@ exports[`ImageFit Should match snapshot 1`] = `
     class="sc-396cbb3d-0 fJFgPN"
     data-nimg="1"
     decoding="async"
-    height="0"
+    height="500"
     loading="lazy"
-    src="/_next/image?url=%2Fimages%2Ffavicon.png&w=16&q=75"
-    srcset="/_next/image?url=%2Fimages%2Ffavicon.png&w=16&q=75 1x"
+    src="/_next/image?url=%2Fimages%2Ffavicon.png&w=1080&q=75"
+    srcset="/_next/image?url=%2Fimages%2Ffavicon.png&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ffavicon.png&w=1080&q=75 2x"
     style="color: transparent;"
-    width="0"
+    width="500"
   />
 </div>
 `;
