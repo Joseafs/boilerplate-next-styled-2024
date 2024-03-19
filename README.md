@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Esse é um projeto boilerplate criado com o objeto de acelerar novos projetos, desafios e no que mais for útil !
 
-## Getting Started
+---
 
-First, run the development server:
+## Nesse boilerplate virá como base:
+
+- [Next.js (14.1.3)](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled Components](https://styled-components.com/)
+- [Testing Library](https://testing-library.com/)
+- [Eslint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [Axios](https://axios-http.com/)
+- [Axios Mock Adapter](https://www.npmjs.com/package/axios-mock-adapter)
+- [Faker](https://fakerjs.dev/)
+- [Storybook](https://storybook.js.org/)
+
+---
+
+## Requerimentos para rodar o projeto
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+"yarn": "<=1.22.17",
+"node": ">=18 <=20.11.1"
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Comandos existentes
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+"start:dev": Inicia a versão de desenvolvimento em "localhost:3000";
+"start:build": Cria versão de produção;
+"start:prod": Inicializa em "localhost:3000" com base na versão de build existente;
+"test": Executa o Jest para cobertura de testes unitários;
+"test:coverage": Executa os testes unitários e expoe um relátorio da cobertura;
+"type:check": Busca por conflitos de tipagem;
+"lint": Verifica no projeto todo por conflitos eslint;
+"lint:format": Formata todos arquivos ao padrão eslint;
+"storybook": Inicia storybook em "localhost:6006";
+"storybook build": Compila e inicia a versão storybook estática;
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Pronto para Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Master](https://boilerplate-next-styled-2024.vercel.app/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Desenvolvedor
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Linkedin Joseafs](https://www.linkedin.com/in/i-joseafs/)

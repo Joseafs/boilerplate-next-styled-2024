@@ -14,6 +14,7 @@
     "start:prod": "next start",
     "lint": "next lint",
     "test": "jest --runInBand",
+    "test:coverage": "yarn test --coverage",
     "lint:format": "eslint --fix --ext .ts,.tsx .",
     "type:check": "tsc --noEmit --skipLibCheck",
     "storybook": "storybook dev -p 6006",
