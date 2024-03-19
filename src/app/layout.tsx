@@ -1,13 +1,10 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import { FC, PropsWithChildren } from 'react';
 
 import { StyledComponentsRegistry } from '~/theme/StyledComponentsRegistry';
 import theme from '~/theme/config';
 import { GlobalStyles } from '~/theme/config/globals';
 import { ThemeProvider } from '~/theme/provider';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   description: 'Generated with next 14 and styled-components for new challenges and projects',
@@ -17,7 +14,7 @@ export const metadata: Metadata = {
 
 const RootLayout: FC<PropsWithChildren> = ({ children }) => (
   <html lang="pt-BR">
-    <body className={inter.className}>
+    <body>
       <StyledComponentsRegistry>
         <GlobalStyles theme={theme} />
         <ThemeProvider>{children}</ThemeProvider>

@@ -1,26 +1,13 @@
 'use client';
 
+import { Quicksand } from 'next/font/google';
 import { createGlobalStyle } from 'styled-components';
+
+const quicksand = Quicksand({ subsets: ['latin'] });
 
 import { PropsRootTheme } from './types';
 
-const rootPathFontQuicksand = '/fonts/quicksand/Quicksand-Regular.ttf';
-
 export const GlobalStyles = createGlobalStyle`
-
-
-  @font-face {
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 400;
-    src: url(${rootPathFontQuicksand}) format('truetype');
-  }
-  @font-face {
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 600;
-    src: url(${rootPathFontQuicksand}) format('truetype');
-  }
 
   :root {
     --primary: ${({ theme }: PropsRootTheme) => theme.palette.primary.main};
@@ -33,6 +20,7 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  
   body {
     word-wrap: break-word;
     word-break: normal;
@@ -40,7 +28,7 @@ export const GlobalStyles = createGlobalStyle`
     max-width: 100%;
     min-height: 100%;
     margin: 0;
-    font-family: 'Quicksand';
+    font-family: ${quicksand.style.fontFamily};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
